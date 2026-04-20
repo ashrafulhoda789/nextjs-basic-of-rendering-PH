@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 
 const FoodCard = ({food}) => {
@@ -24,7 +25,7 @@ const FoodCard = ({food}) => {
                 <p>A card component has a figure, a body part, and inside body there are title and actions parts</p>
                 <div className="card-actions justify-end">
                     <div className="btn btn-primary">Add To Cart</div>
-                    <div className="btn btn-ghost">Show Details</div>
+                    <Link href={`/foods/${id}`} className="btn btn-ghost">Show Details</Link>
                 </div>
             </div>
         </div>
